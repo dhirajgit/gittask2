@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <center>
+        <form>
+            <div>
+                <label>Enter Your FullName:</label>
+                <input type="text" name="fname" placeholder="enter your fullname" minlength="3" maxlength="15"
+                    pattern="[a-zA-Z ]{3,15}" required>
+            </div><br>
+            <div>
+                <label>Enter Your Password:</label>
+                <input type="password" name="pass" placeholder="enter your password" required>
+            </div><br>
+            <div>
+                <label>Enter Your Email:</label>
+                <input type="email" name="mail" placeholder="enter your email" required>
+            </div><br>
+            <div>
+                <label>Enter Your Contact Number:</label>
+                <input type="tel" name="contact" placeholder="enter yout contact number" required>
+            </div><br>
+            <div>
+                <label>Select DOB:</label>
+                <input type="date" name="dob" required>
+            </div><br>
+            <div>
+                <label>Select Your Gender:</label>
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+            </div><br>
+            <div>
+                <label>Select Your Qualification:</label>
+                <input type="checkbox" name="edu" value="ssc">SSC
+                <input type="checkbox" name="edu" value="hsc">HSC
+                <input type="checkbox" name="edu" value="ug">UG
+                <input type="checkbox" name="edu" value="pg">PG
+            </div><br>
+            <div>
+                <label>Select Your Course:</label>
+                <select name="courses" multiple required>
+                          <option value="">Select your course</option>
+                          <option value="java">Java</option>
+                          <option value="angular">Angular</option>
+                          <option value="react">React</option>
+                          <option value="python">Python</option>
+                </select>
+            </div><br>
+              <div>
+                <label>Course fees:</label>
+                <input type="text" name="fees" value="10000" readonly disabled>
+              </div> <br>
+              <div>
+                <label>Comment here:</label>
+                <textarea name="comment" cols="30" rows="10"></textarea>
+              </div><br>
+              <fieldset>
+                <legend>Bank Detail:</legend>
+                <label>Acc Holder Name:</label> <input type="text"> <br>
+                <label>Acc Number:</label><input type="text">
+              </fieldset>
+
+            <button type="submit">submit</button>
+        </form>
+        <hr>
+        <h3>New Input Type:</h3>
+            <label for="">color</label>
+            <input type="color"> <br>
+            <label for="">week</label>
+            <input type="week"> <br>
+            <label for="">Date and Time</label>
+            <input type="datetime-local">
+    </center>
+
+</body>
+
+</html>
